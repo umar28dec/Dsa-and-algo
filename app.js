@@ -1,2 +1,2 @@
-const greet =require('./algo/findArrayElement');
+const greet =require('./algo/31-findArrayElement');
 console.log(greet("Umar Khan"))
