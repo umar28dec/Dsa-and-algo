@@ -16,6 +16,7 @@ Further topics will include related algorithmic techniques, complexity analysis,
 ## Quick Links
 
 - [Big O notation](./algo/array/big-O-notation/BIG-O-NOTATION.md)
+- [First Fun Challenge](./algo/array/big-O-notation/funChallenge.md)
 
 ---
 
