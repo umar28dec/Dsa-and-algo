@@ -1,4 +1,4 @@
-const twoSum = function (nums, target) {
+const twoSum = function (nums, target) {  
   let num = {};
   for (let i = 0; i < nums.length; i++) {
     let diff = target - nums[i];

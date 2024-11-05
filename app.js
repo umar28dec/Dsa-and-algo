@@ -1,7 +1,7 @@
-const twoSum = require("./leetcode/1-twoSum");
+const containsArray = require("./algo/57-containsArray");
 const { performance } = require("perf_hooks");
-let nums = [2, 7, 11, 15],
-  target = 18;
+const array1 = ["z1", "y1", "i1"];
+const array2 = ["z", "y", "x", ""];
 
 function measureMemoryAndTime(fn, ...args) {
   const startMemory = process.memoryUsage().heapUsed;
@@ -19,4 +19,4 @@ function measureMemoryAndTime(fn, ...args) {
   console.log(`Time taken by function: ${timeTaken.toFixed(2)} ms`);
 }
 
-measureMemoryAndTime(twoSum, nums, target);
+measureMemoryAndTime(containsArray, array1, array2);
