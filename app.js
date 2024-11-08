@@ -1,7 +1,5 @@
 const duplicateArray = require("./algo/duplicate-array");
 const { performance } = require("perf_hooks");
-const array1 = ["z1", "y1", "i1"];
-const array2 = ["z", "y", "x", ""];
 
 function measureMemoryAndTime(fn, ...args) {
   const startMemory = process.memoryUsage().heapUsed;
