@@ -1,4 +1,4 @@
-const containsArray = require("./algo/57-containsArray");
+const duplicateArray = require("./algo/duplicate-array");
 const { performance } = require("perf_hooks");
 const array1 = ["z1", "y1", "i1"];
 const array2 = ["z", "y", "x", ""];
@@ -19,4 +19,4 @@ function measureMemoryAndTime(fn, ...args) {
   console.log(`Time taken by function: ${timeTaken.toFixed(2)} ms`);
 }
 
-measureMemoryAndTime(containsArray, array1, array2);
+measureMemoryAndTime(duplicateArray.duplicate);
