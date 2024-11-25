@@ -1,12 +1,12 @@
 // main.js or any other file
 
-const LRUCache = require("./algo/lru");
+const MRUCache = require("./algo/mru");
 
-// Example usage
-const obj = new LRUCache(2);
+let obj = new MRUCache(3);
 obj.put(1, 1);
 obj.put(2, 2);
-console.log(obj.get(1)); // Output: 1
-
-obj.put(3, 3); // Removes key 2
-console.log(obj.get(2)); // Output: -1 (not found)
+obj.put(3, 3);
+obj.put(4, 4);
+console.log(obj.get(3));
+console.log(obj.get(2));
+obj.put(5, 5);
