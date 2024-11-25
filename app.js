@@ -1,20 +1,12 @@
-const duplicateArray = require("./algo/duplicate-array");
-const { performance } = require("perf_hooks");
+// main.js or any other file
 
-function measureMemoryAndTime(fn, ...args) {
-  const startMemory = process.memoryUsage().heapUsed;
-  const startTime = performance.now();
-  const result = fn(...args);
+const LRUCache = require("./algo/lru");
 
-  const endMemory = process.memoryUsage().heapUsed;
-  const endTime = performance.now();
+// Example usage
+const obj = new LRUCache(2);
+obj.put(1, 1);
+obj.put(2, 2);
+console.log(obj.get(1)); // Output: 1
 
-  const memoryUsed = endMemory - startMemory;
-  const timeTaken = endTime - startTime;
-
-  console.log(`Result: ${result}`);
-  console.log(`Memory used by function: ${memoryUsed.toFixed(2)} bytes`);
-  console.log(`Time taken by function: ${timeTaken.toFixed(2)} ms`);
-}
-
-measureMemoryAndTime(duplicateArray.duplicate);
+obj.put(3, 3); // Removes key 2
+console.log(obj.get(2)); // Output: -1 (not found)

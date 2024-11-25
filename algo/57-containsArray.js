@@ -8,16 +8,16 @@
 
 // 2 parameters - arrays - no size limit
 // return true or false
-const containsArray = () => {
-  const arr1 = ["z1", "y1", "i1"];
-  const arr2 = ["z", "y", "x", ""];
+const containsArray = (arr1, arr2) => {
+  // const arr1 = ["z", "y1", "i1"];
+  // const arr2 = ["z", "y", "x", ""];
   let map = {};
   for (let i = 0; i < arr1.length; i++) {
     if (!map[arr1[i]]) {
       map[arr1[i]] = true;
     }
   }
-  console.log(map);
+
   for (let index = 0; index < arr2.length; index++) {
     if (map[arr2[index]]) {
       return true;

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1731060848167" clover="3.2.0">
+  <project timestamp="1731060848168" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="15" coveredelements="15" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
+    <file name="57-containsArray.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e/Learning 2024/javaScript-node/Dsa-and-also/algo/57-containsArray.js">
+      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="14" count="19" type="stmt"/>
+      <line num="15" count="19" type="stmt"/>
+      <line num="16" count="20034" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="35" type="stmt"/>
+      <line num="21" count="19" type="stmt"/>
+      <line num="22" count="20022" type="cond" truecount="2" falsecount="0"/>
+      <line num="23" count="11" type="stmt"/>
+      <line num="26" count="8" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
