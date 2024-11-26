@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for 57-containsArray.js</title>
+    <title>Code coverage report for celebrity.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> 57-containsArray.js</h1>
+        <h1><a href="index.html">All files</a> celebrity.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -92,64 +92,79 @@
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">52x</span>
+<span class="cline-any cline-yes">52x</span>
+<span class="cline-any cline-yes">52x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">19x</span>
-<span class="cline-any cline-yes">19x</span>
-<span class="cline-any cline-yes">20034x</span>
-<span class="cline-any cline-yes">35x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">19x</span>
-<span class="cline-any cline-yes">20022x</span>
-<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Given 2 arrays, create a function that let's a user know (true/false) whether these two arrays contain any common items
-//For Example:
-//const array1 = ['a', 'b', 'c', 'x'];//const array2 = ['z', 'y', 'i'];
-//should return false.
-//-----------
-//const array1 = ['a', 'b', 'c', 'x'];//const array2 = ['z', 'y', 'x'];
-//should return true.
-&nbsp;
-// 2 parameters - arrays - no size limit
-// return true or false
-const containsArray = (arr1, arr2) =&gt; {
-  // const arr1 = ["z", "y1", "i1"];
-  // const arr2 = ["z", "y", "x", ""];
-  let map = {};
-  for (let i = 0; i &lt; arr1.length; i++) {
-    if (!map[arr1[i]]) {
-      map[arr1[i]] = true;
-    }
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">class CelebrityProblem {
+  constructor(n, matrix) {
+    this.n = n;
+    this.matrix = matrix;
+    this.indegree = new Array(n).fill(0);
+    this.outdegree = new Array(n).fill(0);
   }
-&nbsp;
-  for (let index = 0; index &lt; arr2.length; index++) {
-    if (map[arr2[index]]) {
-      return true;
+  findCelebrity() {
+    for (let index = 0; index &lt; this.n; index++) {
+      for (let indexInner = 0; indexInner &lt; this.n; indexInner++) {
+        const value = this.matrix[index][indexInner];
+        this.indegree[index] += value;
+        this.outdegree[indexInner] += value;
+      }
     }
+    for (let i = 0; i &lt; this.n; i++) {
+      if (this.outdegree[i] === this.n - 1 &amp;&amp; this.indegree[i] === 0) {
+        return i;
+      }
+    }
+    return -1;
   }
-  return false;
-};
+}
+module.exports = CelebrityProblem;
 &nbsp;
-module.exports = containsArray;
+// let n = 4;
+// let matrix = [
+//   [0, 0, 1, 1],
+//   [0, 0, 1, 0],
+//   [0, 0, 0, 0],
+//   [0, 0, 1, 0],
+// ];
+// let id = findCelebrity(n, matrix);
+// console.log(id);
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

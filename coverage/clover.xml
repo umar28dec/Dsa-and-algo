@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1731060848167" clover="3.2.0">
-  <project timestamp="1731060848168" name="All files">
-    <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="15" coveredelements="15" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
-    <file name="57-containsArray.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e/Learning 2024/javaScript-node/Dsa-and-also/algo/57-containsArray.js">
+<coverage generated="1732601021869" clover="3.2.0">
+  <project timestamp="1732601021869" name="All files">
+    <metrics statements="24" coveredstatements="24" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3" elements="35" coveredelements="35" complexity="0" loc="24" ncloc="24" packages="1" files="2" classes="2"/>
+    <file name="57-containsArray.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e1/Learning 2024/javaScript-node/Dsa-and-also/algo/57-containsArray.js">
       <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <line num="11" count="1" type="stmt"/>
       <line num="14" count="19" type="stmt"/>
@@ -14,6 +14,23 @@
       <line num="23" count="11" type="stmt"/>
       <line num="26" count="8" type="stmt"/>
       <line num="29" count="1" type="stmt"/>
+    </file>
+    <file name="celebrity.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e1/Learning 2024/javaScript-node/Dsa-and-also/algo/celebrity.js">
+      <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <line num="3" count="5" type="stmt"/>
+      <line num="4" count="5" type="stmt"/>
+      <line num="5" count="5" type="stmt"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="9" count="5" type="stmt"/>
+      <line num="10" count="16" type="stmt"/>
+      <line num="11" count="52" type="stmt"/>
+      <line num="12" count="52" type="stmt"/>
+      <line num="13" count="52" type="stmt"/>
+      <line num="16" count="5" type="stmt"/>
+      <line num="17" count="13" type="cond" truecount="4" falsecount="0"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="21" count="3" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
