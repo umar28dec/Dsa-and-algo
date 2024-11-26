@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for celebrity.js</title>
+    <title>Code coverage report for celebrity-optimize.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> celebrity.js</h1>
+        <h1><a href="index.html">All files</a> celebrity-optimize.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>17/17</span>
+                <span class='fraction'>13/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>14/14</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
@@ -101,23 +101,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-yes">52x</span>
-<span class="cline-any cline-yes">52x</span>
-<span class="cline-any cline-yes">52x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -135,23 +135,23 @@
   constructor(n, matrix) {
     this.n = n;
     this.matrix = matrix;
-    this.indegree = new Array(n).fill(0);
-    this.outdegree = new Array(n).fill(0);
   }
   findCelebrity() {
+    let celeb = 0;
+    for (let index = 1; index &lt; this.n; index++) {
+      if (this.matrix[celeb][index] === 1) {
+        celeb = index;
+      }
+    }
     for (let index = 0; index &lt; this.n; index++) {
-      for (let indexInner = 0; indexInner &lt; this.n; indexInner++) {
-        const value = this.matrix[index][indexInner];
-        this.indegree[index] += value;
-        this.outdegree[indexInner] += value;
+      if (
+        index != celeb &amp;&amp;
+        (this.matrix[celeb][index] === 1 || this.matrix[index][celeb] === 0)
+      ) {
+        return -1;
       }
     }
-    for (let i = 0; i &lt; this.n; i++) {
-      if (this.outdegree[i] === this.n - 1 &amp;&amp; this.indegree[i] === 0) {
-        return i;
-      }
-    }
-    return -1;
+    return celeb;
   }
 }
 module.exports = CelebrityProblem;
