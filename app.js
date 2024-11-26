@@ -1,10 +1,11 @@
-const CelebrityProblem = require("./algo/celebrity-optimize");
-let n = 3;
-let matrix = [
-  [0, 0, 0],
-  [0, 0, 0],
-  [0, 0, 0],
-];
-let celebrity = new CelebrityProblem(n, matrix);
-let id = celebrity.findCelebrity();
-console.log(id);
+const ValidParentheses = require("./algo/stack/valid-parenthese");
+const validator = new ValidParentheses();
+console.log(validator.isValid("({}})"));
+console.log(validator.isValid("()")); // true
+console.log(validator.isValid("()[]{}")); // true
+console.log(validator.isValid("(]")); // false
+console.log(validator.isValid("([)]")); // false
+console.log(validator.isValid("{[]}")); // true
+console.log(validator.isValid("")); // true (empty string is valid)
+console.log(validator.isValid("(({{[[]]}}))")); // true
+console.log(validator.isValid("(((")); // false

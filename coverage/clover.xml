@@ -1,50 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1732606824418" clover="3.2.0">
-  <project timestamp="1732606824418" name="All files">
-    <metrics statements="35" coveredstatements="35" conditionals="15" coveredconditionals="15" methods="5" coveredmethods="5" elements="55" coveredelements="55" complexity="0" loc="35" ncloc="35" packages="1" files="3" classes="3"/>
-    <file name="57-containsArray.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e1/Learning 2024/javaScript-node/Dsa-and-also/algo/57-containsArray.js">
-      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="14" count="19" type="stmt"/>
-      <line num="15" count="19" type="stmt"/>
-      <line num="16" count="20034" type="cond" truecount="2" falsecount="0"/>
-      <line num="17" count="35" type="stmt"/>
-      <line num="21" count="19" type="stmt"/>
-      <line num="22" count="20022" type="cond" truecount="2" falsecount="0"/>
-      <line num="23" count="11" type="stmt"/>
-      <line num="26" count="8" type="stmt"/>
-      <line num="29" count="1" type="stmt"/>
-    </file>
-    <file name="celebrity-optimize.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e1/Learning 2024/javaScript-node/Dsa-and-also/algo/celebrity-optimize.js">
-      <metrics statements="11" coveredstatements="11" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
-      <line num="3" count="5" type="stmt"/>
-      <line num="4" count="5" type="stmt"/>
-      <line num="7" count="5" type="stmt"/>
-      <line num="8" count="5" type="stmt"/>
-      <line num="9" count="11" type="cond" truecount="2" falsecount="0"/>
-      <line num="10" count="6" type="stmt"/>
-      <line num="13" count="5" type="stmt"/>
-      <line num="14" count="12" type="cond" truecount="2" falsecount="0"/>
-      <line num="18" count="3" type="stmt"/>
-      <line num="21" count="2" type="stmt"/>
-      <line num="24" count="1" type="stmt"/>
-    </file>
-    <file name="celebrity.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e1/Learning 2024/javaScript-node/Dsa-and-also/algo/celebrity.js">
-      <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
-      <line num="3" count="5" type="stmt"/>
-      <line num="4" count="5" type="stmt"/>
-      <line num="5" count="5" type="stmt"/>
-      <line num="6" count="5" type="stmt"/>
-      <line num="9" count="5" type="stmt"/>
-      <line num="10" count="16" type="stmt"/>
-      <line num="11" count="52" type="stmt"/>
-      <line num="12" count="52" type="stmt"/>
-      <line num="13" count="52" type="stmt"/>
-      <line num="16" count="5" type="stmt"/>
-      <line num="17" count="13" type="cond" truecount="4" falsecount="0"/>
-      <line num="18" count="2" type="stmt"/>
-      <line num="21" count="3" type="stmt"/>
-      <line num="24" count="1" type="stmt"/>
-    </file>
+<coverage generated="1732612495750" clover="3.2.0">
+  <project timestamp="1732612495750" name="All files">
+    <metrics statements="44" coveredstatements="44" conditionals="22" coveredconditionals="22" methods="6" coveredmethods="6" elements="72" coveredelements="72" complexity="0" loc="44" ncloc="44" packages="2" files="4" classes="4"/>
+    <package name="algo">
+      <metrics statements="35" coveredstatements="35" conditionals="15" coveredconditionals="15" methods="5" coveredmethods="5"/>
+      <file name="57-containsArray.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e1/Learning 2024/javaScript-node/Dsa-and-also/algo/57-containsArray.js">
+        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="19" type="stmt"/>
+        <line num="15" count="19" type="stmt"/>
+        <line num="16" count="20034" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="35" type="stmt"/>
+        <line num="21" count="19" type="stmt"/>
+        <line num="22" count="20022" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="11" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+      </file>
+      <file name="celebrity-optimize.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e1/Learning 2024/javaScript-node/Dsa-and-also/algo/celebrity-optimize.js">
+        <metrics statements="11" coveredstatements="11" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+      </file>
+      <file name="celebrity.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e1/Learning 2024/javaScript-node/Dsa-and-also/algo/celebrity.js">
+        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="16" type="stmt"/>
+        <line num="11" count="52" type="stmt"/>
+        <line num="12" count="52" type="stmt"/>
+        <line num="13" count="52" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="17" count="13" type="cond" truecount="4" falsecount="0"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="algo.stack">
+      <metrics statements="9" coveredstatements="9" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
+      <file name="valid-parenthese.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e1/Learning 2024/javaScript-node/Dsa-and-also/algo/stack/valid-parenthese.js">
+        <metrics statements="9" coveredstatements="9" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
+        <line num="3" count="22" type="stmt"/>
+        <line num="4" count="22" type="stmt"/>
+        <line num="9" count="22" type="stmt"/>
+        <line num="10" count="12067" type="cond" truecount="5" falsecount="0"/>
+        <line num="11" count="6037" type="stmt"/>
+        <line num="13" count="6030" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="18" count="13" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
