@@ -1,4 +1,4 @@
-const ParenthesisGenerator = require("./algo/generateParentheses");
-const generator = new ParenthesisGenerator();
-
-console.log(generator.generateParenthesis(3)); // Output: ["((()))", "(()())", "(())()", "()(())", "()()()"]
+const Queue = require("./algo/queue/SimpleQueue");
+const queue = new Queue();
+console.log(queue.deQueue());
+console.log(queue.peek());
