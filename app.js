@@ -1,11 +1,4 @@
-const ValidParentheses = require("./algo/stack/valid-parenthese");
-const validator = new ValidParentheses();
-console.log(validator.isValid("({}})"));
-console.log(validator.isValid("()")); // true
-console.log(validator.isValid("()[]{}")); // true
-console.log(validator.isValid("(]")); // false
-console.log(validator.isValid("([)]")); // false
-console.log(validator.isValid("{[]}")); // true
-console.log(validator.isValid("")); // true (empty string is valid)
-console.log(validator.isValid("(({{[[]]}}))")); // true
-console.log(validator.isValid("(((")); // false
+const ParenthesisGenerator = require("./algo/generateParentheses");
+const generator = new ParenthesisGenerator();
+
+console.log(generator.generateParenthesis(3)); // Output: ["((()))", "(()())", "(())()", "()(())", "()()()"]
