@@ -52,8 +52,10 @@ const finalCallback = function(err, result) {
 waterfall(arrayOfFunctions, finalCallback);
 ```
 # **Expected Output**
+```bash
 FIRST
 SECOND b
 THIRD c d
 err null
 result e
+```
