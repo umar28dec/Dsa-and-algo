@@ -73,8 +73,6 @@ describe("SimpleList.insertAtLast", () => {
   test("should insert an element into an empty list", () => {
     const list = new SimpleList();
     list.insertAtLast(10);
-    console.log(list);
-
     expect(list.size).toBe(1);
     expect(list.head).not.toBeNull();
     expect(list.head.data).toBe(10);
