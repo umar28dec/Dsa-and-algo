@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1732691767971" clover="3.2.0">
-  <project timestamp="1732691767972" name="All files">
-    <metrics statements="125" coveredstatements="110" conditionals="49" coveredconditionals="43" methods="24" coveredmethods="22" elements="198" coveredelements="175" complexity="0" loc="125" ncloc="125" packages="4" files="7" classes="7"/>
+<coverage generated="1732694368943" clover="3.2.0">
+  <project timestamp="1732694368943" name="All files">
+    <metrics statements="141" coveredstatements="126" conditionals="54" coveredconditionals="47" methods="27" coveredmethods="25" elements="222" coveredelements="198" complexity="0" loc="141" ncloc="141" packages="4" files="8" classes="8"/>
     <package name="algo">
       <metrics statements="47" coveredstatements="47" conditionals="21" coveredconditionals="21" methods="7" coveredmethods="7"/>
       <file name="57-containsArray.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e1/Learning 2024/javaScript-node/Dsa-and-also/algo/57-containsArray.js">
@@ -65,11 +65,27 @@
       </file>
     </package>
     <package name="algo.linked-list">
-      <metrics statements="58" coveredstatements="43" conditionals="17" coveredconditionals="11" methods="10" coveredmethods="8"/>
+      <metrics statements="74" coveredstatements="59" conditionals="22" coveredconditionals="15" methods="13" coveredmethods="11"/>
+      <file name="DoublyList.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e1/Learning 2024/javaScript-node/Dsa-and-also/algo/linked-list/DoublyList.js">
+        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="3" count="19" type="stmt"/>
+        <line num="4" count="19" type="stmt"/>
+        <line num="5" count="19" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="12" count="9" type="stmt"/>
+        <line num="16" count="19" type="stmt"/>
+        <line num="17" count="19" type="stmt"/>
+        <line num="19" count="19" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="22" count="19" type="stmt"/>
+        <line num="23" count="19" type="stmt"/>
+        <line num="24" count="19" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
       <file name="Singly-Linked-List.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e1/Learning 2024/javaScript-node/Dsa-and-also/algo/linked-list/Singly-Linked-List.js">
-        <metrics statements="58" coveredstatements="43" conditionals="17" coveredconditionals="11" methods="10" coveredmethods="8"/>
-        <line num="3" count="57" type="stmt"/>
-        <line num="4" count="57" type="stmt"/>
+        <metrics statements="61" coveredstatements="46" conditionals="20" coveredconditionals="13" methods="10" coveredmethods="8"/>
+        <line num="3" count="55" type="stmt"/>
+        <line num="4" count="55" type="stmt"/>
         <line num="9" count="35" type="stmt"/>
         <line num="10" count="35" type="stmt"/>
         <line num="13" count="35" type="stmt"/>
@@ -100,32 +116,35 @@
         <line num="53" count="11" type="stmt"/>
         <line num="54" count="11" type="stmt"/>
         <line num="55" count="11" type="stmt"/>
-        <line num="59" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="59" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="60" count="1" type="stmt"/>
-        <line num="62" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="5" type="cond" truecount="4" falsecount="0"/>
         <line num="63" count="1" type="stmt"/>
-        <line num="65" count="5" type="stmt"/>
-        <line num="67" count="5" type="stmt"/>
-        <line num="68" count="5" type="stmt"/>
-        <line num="70" count="5" type="stmt"/>
+        <line num="65" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="69" count="3" type="stmt"/>
         <line num="71" count="3" type="stmt"/>
         <line num="72" count="3" type="stmt"/>
-        <line num="73" count="3" type="stmt"/>
-        <line num="75" count="5" type="stmt"/>
-        <line num="76" count="5" type="stmt"/>
+        <line num="74" count="3" type="stmt"/>
+        <line num="75" count="3" type="stmt"/>
+        <line num="76" count="3" type="stmt"/>
         <line num="77" count="3" type="stmt"/>
+        <line num="79" count="3" type="stmt"/>
+        <line num="80" count="3" type="stmt"/>
         <line num="81" count="3" type="stmt"/>
-        <line num="82" count="3" type="stmt"/>
-        <line num="83" count="4" type="stmt"/>
-        <line num="84" count="4" type="stmt"/>
-        <line num="88" count="5" type="stmt"/>
-        <line num="92" count="9" type="stmt"/>
-        <line num="94" count="9" type="stmt"/>
-        <line num="95" count="12" type="cond" truecount="2" falsecount="0"/>
-        <line num="96" count="4" type="stmt"/>
-        <line num="98" count="8" type="stmt"/>
-        <line num="100" count="5" type="stmt"/>
-        <line num="103" count="1" type="stmt"/>
+        <line num="85" count="3" type="stmt"/>
+        <line num="86" count="3" type="stmt"/>
+        <line num="87" count="4" type="stmt"/>
+        <line num="88" count="4" type="stmt"/>
+        <line num="92" count="5" type="stmt"/>
+        <line num="96" count="9" type="stmt"/>
+        <line num="98" count="9" type="stmt"/>
+        <line num="99" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="100" count="4" type="stmt"/>
+        <line num="102" count="8" type="stmt"/>
+        <line num="104" count="5" type="stmt"/>
+        <line num="107" count="1" type="stmt"/>
       </file>
     </package>
     <package name="algo.queue">
