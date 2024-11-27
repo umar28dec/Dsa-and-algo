@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1732648266076" clover="3.2.0">
-  <project timestamp="1732648266076" name="All files">
-    <metrics statements="67" coveredstatements="67" conditionals="32" coveredconditionals="32" methods="14" coveredmethods="14" elements="113" coveredelements="113" complexity="0" loc="67" ncloc="67" packages="3" files="6" classes="6"/>
+<coverage generated="1732691767971" clover="3.2.0">
+  <project timestamp="1732691767972" name="All files">
+    <metrics statements="125" coveredstatements="110" conditionals="49" coveredconditionals="43" methods="24" coveredmethods="22" elements="198" coveredelements="175" complexity="0" loc="125" ncloc="125" packages="4" files="7" classes="7"/>
     <package name="algo">
       <metrics statements="47" coveredstatements="47" conditionals="21" coveredconditionals="21" methods="7" coveredmethods="7"/>
       <file name="57-containsArray.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e1/Learning 2024/javaScript-node/Dsa-and-also/algo/57-containsArray.js">
@@ -62,6 +62,70 @@
         <line num="18" count="5" type="stmt"/>
         <line num="19" count="5" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="algo.linked-list">
+      <metrics statements="58" coveredstatements="43" conditionals="17" coveredconditionals="11" methods="10" coveredmethods="8"/>
+      <file name="Singly-Linked-List.js" path="/media/umar/5726944d-7912-4e7d-9253-8f707ed90d4e1/Learning 2024/javaScript-node/Dsa-and-also/algo/linked-list/Singly-Linked-List.js">
+        <metrics statements="58" coveredstatements="43" conditionals="17" coveredconditionals="11" methods="10" coveredmethods="8"/>
+        <line num="3" count="57" type="stmt"/>
+        <line num="4" count="57" type="stmt"/>
+        <line num="9" count="35" type="stmt"/>
+        <line num="10" count="35" type="stmt"/>
+        <line num="13" count="35" type="stmt"/>
+        <line num="14" count="35" type="stmt"/>
+        <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="43" count="17" type="stmt"/>
+        <line num="44" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="6" type="stmt"/>
+        <line num="46" count="6" type="stmt"/>
+        <line num="47" count="6" type="stmt"/>
+        <line num="49" count="11" type="stmt"/>
+        <line num="50" count="11" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="53" count="11" type="stmt"/>
+        <line num="54" count="11" type="stmt"/>
+        <line num="55" count="11" type="stmt"/>
+        <line num="59" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="62" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="65" count="5" type="stmt"/>
+        <line num="67" count="5" type="stmt"/>
+        <line num="68" count="5" type="stmt"/>
+        <line num="70" count="5" type="stmt"/>
+        <line num="71" count="3" type="stmt"/>
+        <line num="72" count="3" type="stmt"/>
+        <line num="73" count="3" type="stmt"/>
+        <line num="75" count="5" type="stmt"/>
+        <line num="76" count="5" type="stmt"/>
+        <line num="77" count="3" type="stmt"/>
+        <line num="81" count="3" type="stmt"/>
+        <line num="82" count="3" type="stmt"/>
+        <line num="83" count="4" type="stmt"/>
+        <line num="84" count="4" type="stmt"/>
+        <line num="88" count="5" type="stmt"/>
+        <line num="92" count="9" type="stmt"/>
+        <line num="94" count="9" type="stmt"/>
+        <line num="95" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="96" count="4" type="stmt"/>
+        <line num="98" count="8" type="stmt"/>
+        <line num="100" count="5" type="stmt"/>
+        <line num="103" count="1" type="stmt"/>
       </file>
     </package>
     <package name="algo.queue">
