@@ -3,7 +3,7 @@ class FrequencyCount {
     this.sentence = sentence.trim();
   }
 
-  frequency() {
+  frequencyString() {
     let map = new Map();
     this.sentence.split(" ").forEach((element) => {
       {
@@ -20,7 +20,7 @@ class FrequencyCount {
     return map;
   }
 
-  highfrequencyElement() {
+  highfrequencyElementString() {
     let map = new Map();
     this.sentence.split(" ").forEach((element) => {
       {
@@ -43,6 +43,20 @@ class FrequencyCount {
       }
     }
     return letter;
+  }
+
+  frequencyOfDigits() {
+    let map = new Map();
+    this.sentence = this.sentence.toString();
+    for (const elem of this.sentence) {
+      if (map.has(elem)) {
+        let cont = map.get(elem);
+        map.set(elem, cont + 1);
+      } else {
+        map.set(elem, 1);
+      }
+    }
+    return map;
   }
 }
 module.exports = FrequencyCount;
