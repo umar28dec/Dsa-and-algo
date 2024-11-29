@@ -1,5 +1,5 @@
-const StringSplitter = require("./JavaScriptSpecial/100-js/longest-word");
+const FrequencyCount = require("./JavaScriptSpecial/100-js/2-frequency-count");
 
-const obj = new StringSplitter("the quick brown quick");
-const result = obj.splitWords();
+const obj = new FrequencyCount("thet tt quick brown quick");
+const result = obj.highfrequencyElement();
 console.log(result);
