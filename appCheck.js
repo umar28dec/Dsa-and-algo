@@ -1,7 +1,9 @@
-const UnicodePrinter = require("./JavaScriptSpecial/unicode/printUnicode>value");
+const SortString = require("./JavaScriptSpecial/sort/sortString");
 
 // Usage
-const printer = new UnicodePrinter();
-printer.printUppercaseLetters();
-printer.printLowercaseLetters();
-printer.printNumbers();
+const sortObject = new SortString(
+  "the quick brown fox jumps over bar the lazy a"
+);
+// console.log(reduce.map());
+// console.log(reduce.filter());
+console.log(sortObject.sort());
