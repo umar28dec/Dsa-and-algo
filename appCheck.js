@@ -1,5 +1,7 @@
-const FrequencyCount = require("./JavaScriptSpecial/100-js/2-frequency-count");
+const UnicodePrinter = require("./JavaScriptSpecial/unicode/printUnicode>value");
 
-const obj = new FrequencyCount("1122334455");
-const result = obj.frequencyOfDigits();
-console.log(result);
+// Usage
+const printer = new UnicodePrinter();
+printer.printUppercaseLetters();
+printer.printLowercaseLetters();
+printer.printNumbers();
