@@ -1,9 +1,6 @@
-const SortString = require("./JavaScriptSpecial/sort/sortString");
+const NumberAnalyzer = require("./JavaScriptSpecial/100-js/MissingAndReapting");
 
-// Usage
-const sortObject = new SortString(
-  "the quick brown fox jumps over bar the lazy a"
-);
-// console.log(reduce.map());
-// console.log(reduce.filter());
-console.log(sortObject.sort());
+const arr = [4, 3, 6, 2, 1, 3, 5, 41];
+const analyzer = new NumberAnalyzer(arr);
+const result = analyzer.findMissingAndRepeating();
+console.log(result);
